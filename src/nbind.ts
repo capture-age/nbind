@@ -327,7 +327,7 @@ function initNode<ExportType extends DefaultExportType>(
 
 	Object.keys(lib).forEach(function(key: string) {
 		// TS bug since v3.5
-		(binding.libas as any)[key] = lib[key];
+		(binding.lib as any)[key] = lib[key];
 	});
 
 	callback(null, binding);
